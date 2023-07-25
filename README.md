@@ -32,20 +32,21 @@ The application will have the following features:
 <p><img width="187" alt="image" src="https://github.com/Namita-Namita/DOSP_Twitter_clone/assets/31967922/1d34c83f-9944-41d7-a65e-9b52064ebf23" style="border:1px solid black"> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
 <img width="194" alt="image" src="https://github.com/Namita-Namita/DOSP_Twitter_clone/assets/31967922/cf1c3e47-95d1-4d76-8bb5-2de02c7d06a8" style="border:1px solid black">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
 <img width="186" alt="image" src="https://github.com/Namita-Namita/DOSP_Twitter_clone/assets/31967922/89ab6281-c85f-4325-bba5-bce403b496f9" style="border:1px solid black">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
-<img width="192" alt="image" src="https://github.com/Namita-Namita/DOSP_Twitter_clone/assets/31967922/95556c5c-7dc7-42d9-9e27-a324da59ce59" style="border:1px solid black">
-<br><em>Fig 1.: User Registration</em>
- &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;<em>Fig 2.: User Dashboard</em>&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;<em>Fig 3.: Hashtag Search not exisitng</em>&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <em>Fig 4.: Subscribe</em></p>
- 
-<p><img width="178" alt="image" src="https://github.com/Namita-Namita/DOSP_Twitter_clone/assets/31967922/7d2115cc-6b34-4384-a056-f99863b6266c" style="border:1px solid black"> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
-<img width="193" alt="image" src="https://github.com/Namita-Namita/DOSP_Twitter_clone/assets/31967922/d71030ab-e3f0-4b59-bb64-bac4775859a8" style="border:1px solid black">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
-<img width="175" alt="image" src="https://github.com/Namita-Namita/DOSP_Twitter_clone/assets/31967922/182f7288-7d32-479e-b9f8-9c024bbdcdfa" style="border:1px solid black">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
-<img width="188" alt="image" src="https://github.com/Namita-Namita/DOSP_Twitter_clone/assets/31967922/94033d26-4fae-4e6c-9954-31691596330a" style="border:1px solid black">
-<br><em>Fig 5.:Successfull Hashtag Search</em>
- &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<em>Fig 6.: Subdcribed Tweets</em>&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<em>Fig 7.:New Tweet</em>&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;<em>Fig 8.: Re-tweet</em></p>
+ <br><em>Fig 1.: User Registration</em>
+ &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;<em>Fig 2.: User Dashboard</em>&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;<em>Fig 3.: Hashtag Search not exisitng</em></p>
 
-<p><img width="189" alt="image" src="https://github.com/Namita-Namita/DOSP_Twitter_clone/assets/31967922/cb1e2167-e3dd-42d5-ad29-997fec639d87" style="border:1px solid black"> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+ 
+<p><img width="192" alt="image" src="https://github.com/Namita-Namita/DOSP_Twitter_clone/assets/31967922/95556c5c-7dc7-42d9-9e27-a324da59ce59" style="border:1px solid black">
+&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <img width="178" alt="image" src="https://github.com/Namita-Namita/DOSP_Twitter_clone/assets/31967922/7d2115cc-6b34-4384-a056-f99863b6266c" style="border:1px solid black"> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+<img width="193" alt="image" src="https://github.com/Namita-Namita/DOSP_Twitter_clone/assets/31967922/d71030ab-e3f0-4b59-bb64-bac4775859a8" style="border:1px solid black">
+<em>Fig 4.: Subscribe</em>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+<br><em>Fig 5.:Successfull Hashtag Search</em>
+ &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<em>Fig 6.: Subdcribed Tweets</em>&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</p>
+
+<p><img width="175" alt="image" src="https://github.com/Namita-Namita/DOSP_Twitter_clone/assets/31967922/182f7288-7d32-479e-b9f8-9c024bbdcdfa" style="border:1px solid black">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+<img width="188" alt="image" src="https://github.com/Namita-Namita/DOSP_Twitter_clone/assets/31967922/94033d26-4fae-4e6c-9954-31691596330a" style="border:1px solid black">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;<img width="189" alt="image" src="https://github.com/Namita-Namita/DOSP_Twitter_clone/assets/31967922/cb1e2167-e3dd-42d5-ad29-997fec639d87" style="border:1px solid black"> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
 <img width="181" alt="image" src="https://github.com/Namita-Namita/DOSP_Twitter_clone/assets/31967922/a8e23567-ab84-4da0-8a96-5752e0e3d1fb" style="border:1px solid black">
-<br><em>Fig 9.:Search Mentions</em>
+<br><em>Fig 7.:New Tweet</em>&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;<em>Fig 8.: Re-tweet</em>&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;<em>Fig 9.:Search Mentions</em>
  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<em>Fig 10.:Search Subscribers</em></p>
 
 
