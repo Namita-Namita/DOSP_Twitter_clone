@@ -78,8 +78,73 @@ make run
 ```
 3. Navigate to http://localhost:8082 in the browser.
 
+## Implementation
+TwitterClone is a system modeled after Twitter's features, utilizing the Actor model approach. In this setup, each user profile is seen as a separate actor, known as the client. A central engine, acting as a server, manages the user profile names and their related process IDs. To effectively simulate Twitter's operations, a separate simulator engine has been created. This simulator imitates regular Twitter actions and activates backend functions of the client actors to emulate various activities. This tool is vital for gauging performance and expanding the Twitter engine by creating a vast user base quickly. Finally, this backend system is connected to a web interface, which employs websockets for message exchanges between the individual actors.
+
+### What is the actor model?
+The actor model is a programming approach designed for creating concurrent and distributed applications. Within this model, an actor is the core computational unit, holding its state, behavior, and communication methods. They can send messages to other actors asynchronously, process incoming messages, and adjust their internal state accordingly. Crucially, actors don't have direct access to each other's data or state; they only communicate through messages.
+
+### What does actors do?
+**1. Server Engine:**
+<br>**Account Management:** One of its primary roles is to keep track of registered user accounts. This ensures that every user has a unique identity within the system.
+<br>**Tweet Management:** The server engine maintains records of all tweets. This includes:
+<br>**Hashtag Management:** Using a map data structure, it tracks all tweets associated with a particular hashtag. The key in this map is the hashtag, while the value is a list of tweets containing that hashtag, along with the username of the tweeter.
+<br>**Mention Management:** Similarly, it manages mentions. A map is maintained where the key represents a particular mention, and the value is a list of tweets containing that mention, paired with the respective tweeter’s usernames.
+<br>**Search Capability:** The server processes search queries from clients. Users can search for specific hashtags, mentions, or even general keywords in their feed.
+
+<br>**2. Client:**
+<br>**Tweeting:** Clients can create and broadcast tweets to their followers or the general public.
+<br>**Retweeting:** They can also share or retweet other users' tweets.
+<br>**Search:** Clients have the capability to initiate search requests. They can look for tweets based on hashtags, mentions, or even specific user's tweets.
+<br>**Displaying Feed:** Clients can display their feed, showcasing tweets from accounts they follow.
+
+<br>**3. Simulator:**
+<br>**User Generation:** The simulator has the capability to create 'N' number of users, simulating a real-world scenario of multiple users joining the platform.
+<br>**Activity Simulation:** The simulator emulates real-world user actions. This includes subscribing to other users, tweeting, retweeting, and performing searches. This is essential for testing the system's robustness and scalability.
+
+<br>**4. Handler:**
+<br>**Communication Facilitator:** For each client actor, a corresponding handler actor process is spawned. This handler is responsible for managing the communication between the frontend (what the user interacts with) and the backend (where data is processed and stored). This design ensures that client interactions are managed efficiently and without delay, providing a seamless user experience.
+In essence, each actor/process has a distinct role, ensuring the system operates seamlessly. The Server Engine is the backbone, storing essential data, the Client represents the user, the Simulator helps in testing and scaling, and the Handler ensures smooth communication between the system's front and back ends.
+
+### Websockets and Cowboy server
+Websockets:The client typically sends an HTTP request to the server to initiate a WebSocket connection.
+The WebSocket handshake is then completed by the server by sending a response with an HTTP header to start the WebSocket connection.
+The WebSocket protocol messages can be sent asynchronously between the client and server once the connection has been made. We use a straightforward Erlang web server named cowboy to control the socket and the WebSocket protocol to interface the Erlang runtime system with WebSockets.
+
 ### 
 <img width="468" alt="image" src="https://github.com/Namita-Namita/DOSP_Twitter_clone/assets/31967922/b1f8f3ee-2486-4f33-9c69-24a6c7f20dc3">
+
+Cowboy:
+Cowboy is the name of the Erlang framework that is most frequently used to build web servers. It's pretty amazing to see what Cowboy accomplishes with such little code. Cowboy works in combination with Ranch (which is a socket worker pool for tcp protocols) and Cowlib (library for message processing). The process tree begins once your server has been established because Cowboy is meant to construct servers. The only process active in the standalone Cowboy app is cowboy clock. A typical method for launching a cowboy http server is as follows.
+<br>
+```
+cowboy:start_http(http, 10, [{port, 80}], [{env, [{dispatch, Dispatch}]}]).
+```
+### Steps to create and run a cowboy application on a Mac device.
+• First, let's create the directory for our application all in lowercase.
+```
+$ mkdir hello_erlang
+$ cd hello_erlang
+```
+• Install erlang.mk: 
+```
+curl -O https://erlang.mk/erlang.mk
+```
+• Bootstrap the application : 
+```
+make -f erlang.mk bootstrap bootstrap-rel
+```
+• Run the application : 
+```
+make run
+```
+• Now, add cowboy to the existing dependencies(in Makefile)
+<br>
+<img width="427" alt="image" src="https://github.com/Namita-Namita/DOSP_Twitter_clone/assets/31967922/93cb568e-245d-4ecf-8f62-2d160831258b">
+<br>• Add Routing and listening in the <app name>_app.erl
+<br>• Run the application : ```make run```
+[For more references, check out the documentation](https://ninenines.eu/docs/en/cowboy/2.6/guide/getting_started/)
+
 
 
 ### Control Flow
@@ -92,3 +157,12 @@ server
 handler
 <p><img width="745" alt="image" src="https://github.com/Namita-Namita/DOSP_Twitter_clone/assets/31967922/b400eff7-482a-4a83-8efd-c8411958cdec"></p>
 
+## Conclusions
+A websocket interface for a twitter like engine is successfully implemented with an interactive user interface through which users can perform functionalities like
+<br>• Tweet
+<br>• Register
+<br>• Subscribe
+<br>• Retweet
+<br>• Query tweets by mention, hashtag & by subscribed users A websocket connection is established after registering and redirected to /name/main. Once a user tweeted, all the subscribed users will instantly get in the feed through websockets without any user interaction.
+
+## Demo Video
